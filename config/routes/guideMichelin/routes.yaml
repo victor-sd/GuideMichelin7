@@ -1,0 +1,34 @@
+#index:
+#    path: /
+#    controller: App\Controller\DefaultController::index
+
+guide_accueil:
+ path: /accueil
+ controller: App\Controller\GuideController::accueil
+
+guide_menu:
+  path: /menu
+  controller: App\Controller\GuideController::menu
+
+guide_afficher:
+ path: /afficher/{numero}
+ controller: App\Controller\GuideController::afficher
+
+guide_voir:
+ path: /voir/{id}
+ controller: App\Controller\GuideController::voir
+ requirements:
+  numero: \d+
+
+guide_restaurant:
+  path: /menu
+  controller: App\Controller\GuideController::menu
+
+guide_chef:
+  path: /menu
+  controller: App\Controller\GuideController::menu
+
+guide_plat:
+  path: /menu
+  controller: App\Controller\GuideController::menu
+
